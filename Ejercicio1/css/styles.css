@@ -1,0 +1,102 @@
+/* ----- Reset ------ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+/* ----- Fin de Reset ------ */
+
+body { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 14px; color: #37362f; }
+a { color: #5f5de4; text-decoration: none; }
+h2 { margin-bottom: 30px;}
+
+header { box-shadow: 0px 5px 7px -5px #ccc; }
+.header-container { width: 100%; max-width: 1140px; padding: 15px; display: flex; justify-content: space-between;  margin: 0 auto; align-items: center;}
+.logo { width: 100%; max-width: 200px;}
+.logo img { width: 100%; }
+.login { font-weight: 300; font-size: 14px; line-height: 14px; }
+.login p { margin-bottom: 10px; }
+
+.main-container { width: 100%; max-width: 800px; }
+.main-container.main { margin: 50px auto; padding: 0 10px; }
+
+.sign-with-social { display: flex; margin-bottom: 30px; color: #fff; align-items: center; gap: 10px; }
+.sign-with-social div { padding: 0 10px 0 0; border-width: 2px; border-style: solid; height: 30px; cursor: pointer; }
+.sign-with-social span { display: inline-block; width: 26px; height: 26px; background-color: #fff; vertical-align: middle; margin-right: 5px; background-repeat: no-repeat; }
+.sign-with-social p { display: inline-block; font-size: 12px; line-height: 12px; }
+.sign-with-social .google { background-color: #4286f5; border-color: #4286f5; }
+.sign-with-social .google span { background-image: url(/img/google-icon.svg); background-size: 22px 22px; background-position: center;}
+.sign-with-social .facebook { background-color: #4268b2; border-color: #4268b2; }
+.sign-with-social .facebook span { background-image: url(/img/facebook-icon.svg); background-size: 22px; background-position: 5px; border-radius: 3px; }
+
+form { width: 100%; max-width: 70%; border: 0; margin-top: 30px; }
+form fieldset { border: none; padding: 0; margin: 0; }
+form label { display: block; }
+form input { box-shadow: none; background-color: transparent; }
+form input:not([type="submit"]) { border-color: #37362f; border-style: solid; border-width: 1px; border-radius: 3px; }
+form div { margin-bottom: 15px; }
+form div label { margin-bottom: 5px; }
+form div input { width: 100%; height: 30px; padding: 0 10px; }
+form input::placeholder { color: #ccc; }
+input[type="checkbox"] { display: inline-block; width: 15px; height: 15px; vertical-align: middle; cursor: pointer; }
+input[type="checkbox"] + label { display: inline-block; vertical-align: middle; }
+form input[type="submit"] { display: block; border-width: 3px; border-style: dashed; border-color: #ccc; border-radius: 20px; padding: 0 5px; height: 45px; width: 100%; max-width: 160px; margin-top: 30px; cursor: pointer; }
+.password-container { position: relative; }
+.show-pass { position: absolute; width: 25px; height: 25px; background-image: url(/img/show-pass-icon.png); background-repeat: no-repeat; background-size: 100%; right: 5px; bottom: 2px; cursor: pointer; }
+
+footer { box-shadow: 0px -5px 7px -5px #ccc; padding: 20px 0; font-size: 12px; }
+footer a { color: #37362f;}
+footer .main-container { display: flex; flex-wrap: nowrap; justify-content: flex-start; gap: 0 15px; margin: 0 auto; max-width: 1140px; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer ul li { display: inline-block; }

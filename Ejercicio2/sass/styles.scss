@@ -1,0 +1,143 @@
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "variables.scss";
+
+body {
+    font-family: Opensans; 
+    font-size: 14px;
+    line-height: 14px;
+    color: $darkGrey;
+}
+
+h1 {
+    font-family: Slabo;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+h1 + p {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+
+label {
+    display: block;
+    font-family: Opensans-Bold;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #939191;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 100%;
+    max-width: calc( 100% - 30px );
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Opensans;
+    cursor: pointer;
+}
+
+legend {
+    margin-bottom: 25px;
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 80px;
+
+        li {
+            &:before {
+                content: '\2022';
+                color: $turquoise;
+                font-size: 25px;
+                font-weight: bold;
+                line-height: 25px;
+                display: inline-block;
+                vertical-align: sub;
+                margin-right: 5px;
+            }
+        }
+    }
+    
+}
+
+button {
+    border: 1px solid $mediumGrey;
+    height: 40px;
+    width: 100%;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+a {
+    color: $turquoise;
+    text-decoration: none;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 820px;
+    margin: 40px auto 0 auto;
+}
+
+.col2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+    .col:nth-child(1) {
+        flex-basis: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+    
+}
+
+.small {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 20px;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.show-pass {
+    color: $turquoise;
+    font-family: Opensans-Bold;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 17px;
+        background-image: url('../img/show-pass-icon.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+}
